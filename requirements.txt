@@ -1,0 +1,12 @@
+tkintertable
+opencv-python
+Pillow
+matplotlib
+tensorflow
+scipy
+playsound2
+playsound
+librosa
+pyaudio-helper
+pipwin
+sounddevice
