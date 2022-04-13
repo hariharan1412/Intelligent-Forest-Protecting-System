@@ -3,10 +3,24 @@
 
      This project can be used to detect fire occurance in deep forest through computer vision and detects chainsaw sounds which are illegal felling in the deep forest using deep learning by comparing their datasets.
 
+<!-- # Code  -->
+
+Download our Model from :<a href = "https://drive.google.com/drive/folders/1KU4cD5f0baU_gUQcpq5hUBMNTBgMOCft?usp=sharing">https://drive.google.com/drive/folders/1KU4cD5f0baU_gUQcpq5hUBMNTBgMOCft?usp=sharing</a>
+
+
+Download our Demo from :<a href = "https://drive.google.com/drive/folders/1QmGoXz47neNPkNfhR-EqsKtzN5OHn4-g?usp=sharing">https://drive.google.com/drive/folders/1QmGoXz47neNPkNfhR-EqsKtzN5OHn4-g?usp=sharing</a>
+
+
+
+# Setup 
+
+      Once you downloaded both contents , Place the model folder inside our teamstartup folder.
+      Please make sure you have Anaconda3 setup in your computer to have conda environment 
+
 # COMMANDS
-    
-     1. Install conda env
-     2. Navigate to the folder
+     
+     1. Open Conda powershell
+     2. Navigate to the folder (teamStartup)
      3. conda create --name your_environment_name
      4. conda activate your_environment_name
      5. conda install pip
@@ -14,6 +28,11 @@
      7. pip install pipwin
      8. pipwin install pyaudio
 
+# Run 
+
+      Once you activated and installed all the packages in the environment its time to show.
+
+      RUN : python.exe team_startup.py 
 
 Running the experiment or detection requires that you have 
 Tensorflow, OpenCV and PyAudio installed. You can 
@@ -35,6 +54,11 @@ install this dependencies via the commands below.
      
       pip install librosa
 
+# Alert Email ID 
+      use this Email ID to check the Alert messages from the system
+
+      Email ID : teamstartuptesting@gmail.com   
+      Psw      : teamstartup143
 
 # PROJECT DEMO
 

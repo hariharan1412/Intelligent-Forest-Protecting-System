@@ -10,3 +10,4 @@ librosa
 pyaudio-helper
 pipwin
 sounddevice
+tensorflow-gpu

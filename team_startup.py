@@ -12,7 +12,7 @@ cd = chainsaw_detect()
 def activate(root):
     root.destroy()
     t1 = threading.Thread(target=fd.main)
-    t2 = threading.Thread(target=cd.main)
+    t2 = threading.Thread(target=cd.detect)
     t1.start()
     t2.start()
 

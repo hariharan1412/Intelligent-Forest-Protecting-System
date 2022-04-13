@@ -140,3 +140,10 @@ class chainsaw_detect:
                 smtp.send_message(self.mgs)
                     
 
+    def detect(self):
+        while True:
+            try:
+                self.main()
+                self.sleep(1)
+            except:
+                pass

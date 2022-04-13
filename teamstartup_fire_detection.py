@@ -90,68 +90,71 @@ class fire_detection:
         start = True
 
         while start:            
-            ret, frame = self.cam.read()
-
-            font = cv2.FONT_HERSHEY_SIMPLEX
-
-            currentTime = datetime.now()
-            currentSecs = currentTime.strftime("%S")
-
-            if counted:
-                a = int(currentSecs) + 10
-                c = int(currentSecs)
-                if a >= 60:
-                    a -= 60
-                counted = False
-
-            b = int(currentSecs) - c
-            displaySecs = 10 - b
-            if displaySecs >=60:
-                displaySecs = displaySecs - 60
-            if displaySecs != 0:
-
-                cv2.putText(frame, 
-                            'Capturing Image In ' + str(displaySecs), 
-                            (100, 50), 
-                            font, 1, 
-                            (0,0,0), 
-                            2, 
-                            cv2.LINE_4)
+            try:
+                ret, frame = self.cam.read()
+        
+                font = cv2.FONT_HERSHEY_SIMPLEX
+        
+                currentTime = datetime.now()
+                currentSecs = currentTime.strftime("%S")
+        
+                if counted:
+                    a = int(currentSecs) + 10
+                    c = int(currentSecs)
+                    if a >= 60:
+                        a -= 60
+                    counted = False
+        
+                b = int(currentSecs) - c
+                displaySecs = 10 - b
+                if displaySecs >=60:
+                    displaySecs = displaySecs - 60
+                if displaySecs != 0:
+        
+                    cv2.putText(frame, 
+                                'Capturing Image In ' + str(displaySecs), 
+                                (100, 50), 
+                                font, 1, 
+                                (0,0,0), 
+                                2, 
+                                cv2.LINE_4)
+                
+                if displaySecs == 0:
+                    cv2.putText(frame, 
+                                'Image Captured', 
+                                (100, 50), 
+                                font, 1, 
+                                (0,0,0), 
+                                2, 
+                                cv2.LINE_4)
+                
+                if not ret:
+                    print("failed to grab frame")
+                    break
+        
+                cv2.imshow("test", frame)
+        
+                currentTime = datetime.now()
+                secondsNow = currentTime.strftime("%S")
+        
+                ms = currentTime.strftime("%f")
+        
+                k = cv2.waitKey(1)
+        
+                if k%256 == 27:
+                    # ESC pressed
+                    print("Escape hit, closing...")
+                    start = False
+        
+                if a == int(currentSecs):
+                    img_name = "1.jpg"
+                    cv2.imwrite(img_name, frame)
+                    self.detect_from_image(img_name)
+                    counted = True
             
-            if displaySecs == 0:
-                cv2.putText(frame, 
-                            'Image Captured', 
-                            (100, 50), 
-                            font, 1, 
-                            (0,0,0), 
-                            2, 
-                            cv2.LINE_4)
-            
-            if not ret:
-                print("failed to grab frame")
-                break
-
-            cv2.imshow("test", frame)
-
-            currentTime = datetime.now()
-            secondsNow = currentTime.strftime("%S")
-
-            ms = currentTime.strftime("%f")
-
-            k = cv2.waitKey(1)
-
-            if k%256 == 27:
-                # ESC pressed
-                print("Escape hit, closing...")
-                start = False
-
-            if a == int(currentSecs):
-                img_name = "1.jpg"
-                cv2.imwrite(img_name, frame)
-                self.detect_from_image(img_name)
-                counted = True
-            
-        self.cam.release()
+            except:
+                pass
+            self.cam.release()
 
 
 
