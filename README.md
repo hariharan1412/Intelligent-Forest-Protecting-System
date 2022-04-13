@@ -14,12 +14,12 @@ Download our Demo from :<a href = "https://drive.google.com/drive/folders/1QmGoX
 
 # Setup 
 
-      Once you downloaded both contents , Place the model folder inside our teamstartup folder.
+      Once you downloaded the model from the gdriver , Place the model folder inside our teamstartup folder.
       Please make sure you have Anaconda3 setup in your computer to have conda environment 
 
 # COMMANDS
      
-     1. Open Conda powershell
+     1. Open anaconda3 powershell
      2. Navigate to the folder (teamStartup)
      3. conda create --name your_environment_name
      4. conda activate your_environment_name
@@ -30,32 +30,15 @@ Download our Demo from :<a href = "https://drive.google.com/drive/folders/1QmGoX
 
 # Run 
 
-      Once you activated and installed all the packages in the environment its time to show.
+      Once you activated and installed all the packages in the environment its time to start.
 
       RUN : python.exe team_startup.py 
 
 Running the experiment or detection requires that you have 
-Tensorflow, OpenCV and PyAudio installed. You can 
-install this dependencies via the commands below.
-
-
-- Tensorflow 1.4.0 (and later versions) Install or install via pip
-
-      pip install --upgrade tensorflow 
-- OpenCV Install or install via pip
-
-      pip install opencv-python 
-- Keras 2.x Install or install via pip
-
-      pip install keras 
-- PyAudio and Librosa
-
-      pip install pyaudio
-     
-      pip install librosa
+Tensorflow, OpenCV and PyAudio installed.
 
 # Alert Email ID 
-      use this Email ID to check the Alert messages from the system
+      use this Email ID to check the Alert messages from the system.
 
       Email ID : teamstartuptesting@gmail.com   
       Psw      : teamstartup143
