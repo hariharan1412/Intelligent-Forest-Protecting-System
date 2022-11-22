@@ -1,14 +1,16 @@
 
 # FIRE DETECTION AND ILLEGAL ACTION SOUNDS DETECTION USING DEEP LEARNING IN DEEP FOREST
+<br />
 
-     This project can be used to detect fire occurance in deep forest through computer vision and detects chainsaw sounds which are illegal felling in the deep forest using deep learning by comparing their datasets.
-
-<!-- # Code  -->
-
-Download our Model from :<a href = "https://drive.google.com/drive/folders/1KU4cD5f0baU_gUQcpq5hUBMNTBgMOCft?usp=sharing">https://drive.google.com/drive/folders/1KU4cD5f0baU_gUQcpq5hUBMNTBgMOCft?usp=sharing</a>
+#### This project can be used to detect fire occurance in deep forest through computer vision and detects chainsaw sounds which are illegal felling in the deep forest using deep learning.
 
 
-Download our Demo from :<a href = "https://drive.google.com/drive/folders/1QmGoXz47neNPkNfhR-EqsKtzN5OHn4-g?usp=sharing">https://drive.google.com/drive/folders/1QmGoXz47neNPkNfhR-EqsKtzN5OHn4-g?usp=sharing</a>
+<br />
+
+Download our Model from :[ LINK](https://drive.google.com/drive/folders/1KU4cD5f0baU_gUQcpq5hUBMNTBgMOCft?usp=sharing)
+
+
+Download our Demo from :[ LINK](https://drive.google.com/drive/folders/1QmGoXz47neNPkNfhR-EqsKtzN5OHn4-g?usp=sharing)
 
 
 
@@ -41,7 +43,7 @@ Tensorflow, OpenCV and PyAudio installed.
       use this Email ID to check the Alert messages from the system.
 
       Email ID : teamstartuptesting@gmail.com   
-      Psw      : teamstartup143
+      Psw      : ********
 
 # PROJECT DEMO
 
